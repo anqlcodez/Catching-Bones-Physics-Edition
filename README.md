@@ -17,3 +17,15 @@ This simple keyboard-arrow controlled game demonstrates real physics concepts us
 //  A larger or denser planet has stronger g, so the bone falls faster.
 
 // -------------------------------------------------------------//
+
+Software Used:
+
+* Replit
+
+Files Required:
+
+* JavaScript
+
+* CSS
+
+* HTML
