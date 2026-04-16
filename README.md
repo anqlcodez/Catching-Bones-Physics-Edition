@@ -29,3 +29,15 @@ Files Required:
 * CSS
 
 * HTML
+
+
+physics-bone-catching-game/
+│
+├── index.html
+├── script.js
+├── style.css
+
+
+└── assets/
+    ├── bone.png
+    └── dog.png
