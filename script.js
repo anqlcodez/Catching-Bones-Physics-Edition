@@ -127,7 +127,7 @@ let boneImg, dog2Img;
 //  this function finishes.
 // -------------------------------------------------------------
 function preload() {
-  dog2Img = loadImage("assets/dog2.png");
+  dog2Img = loadImage("assets/dog.png");
   boneImg = loadImage('assets/bone.png');
   console.log("[PRELOAD] Images loaded.");
 }
@@ -721,7 +721,6 @@ function drawWinScreen() {
 
 // -------------------------------------------------------------
 //  drawLoseScreen
-//  Skull replaced with sad face emoji.
 //  Retry button is placed just below the last line of text.
 // -------------------------------------------------------------
 function drawLoseScreen() {
