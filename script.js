@@ -117,7 +117,7 @@ let catchTimes     = [];    // timestamps of each successful catch
 let lastVelY       = 0;     // previous-frame velocity (to display live acceleration)
 
 let playButton, retryButton;
-let boneImg, dog2Img;
+let boneImg, dogImg;
 
 
 // -------------------------------------------------------------
@@ -127,7 +127,7 @@ let boneImg, dog2Img;
 //  this function finishes.
 // -------------------------------------------------------------
 function preload() {
-  dog2Img = loadImage("assets/dog.png");
+  dogImg = loadImage("assets/dog.png");
   boneImg = loadImage('assets/bone.png');
   console.log("[PRELOAD] Images loaded.");
 }
@@ -143,12 +143,12 @@ function setup() {
   frameRate(FPS);
 
   boneImg.resize(60, 0);
-  dog2Img.resize(50, 0);
+  dogImg.resize(50, 0);
 
   // 'k' = kinematic sprite — we set its velocity ourselves each frame
   // instead of letting the physics engine handle it.  This is needed
   // because each planet has a custom gravity value.
-  catcher = new Sprite(dog2Img, width / 2, height - 60, 110, 22, 'k');
+  catcher = new Sprite(dogImg, width / 2, height - 60, 110, 22, 'k');
 
   fallingBone = new Sprite(boneImg, width / 2, -60, 14);
   fallingBone.vel.y        = 0;
